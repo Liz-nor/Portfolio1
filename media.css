@@ -1,0 +1,142 @@
+@media (max-witdh: 1200px) {
+  header {
+    padding: 1 rem 2rem;
+    gap: 2rem;
+  }
+  .about .about-container {
+    gap: 3rem;
+  }
+  .skills-grid {
+    flex-direction: column;
+  }
+  .input-box input {
+    padding: 1.5rem 6rem;
+    font-size: 2rem;
+  }
+  input input::placeholder {
+    font-size: 2.5rem;
+  }
+  .input-box i {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    gap: 1rem;
+    padding: 1rem 1rem;
+  }
+  header .logo {
+    font-size: 1rem;
+  }
+  header .vistit-btn {
+    display: none;
+  }
+  .input-box input {
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+  }
+  .input-box input::placeholder {
+    font-size: 1.5rem;
+  }
+  .input-box i {
+    display: none;
+  }
+  .project-card img {
+    width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  header #menu-icon {
+    display: block;
+    height: 30px;
+    margin-right: 5rem;
+    cursor: pointer;
+  }
+  .logo span {
+    display: none;
+  }
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    margin-top: 1rem;
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: var(--light-green);
+    border-radius: 2rem;
+    display: none;
+  }
+  .nav-links li {
+    margin: 1rem;
+    padding: 1rem;
+  }
+  .nav-links.active {
+    display: block;
+    z-index: 1001;
+  }
+  header {
+    padding: 1rem 5rem;
+  }
+  .about-container {
+    flex-direction: column;
+  }
+  .container img {
+    width: 100%;
+  }
+  .overlay-text {
+    font-size: 1.1rem;
+  }
+  .input-box input {
+    padding: 0.5rem 2rem;
+    width: 80%;
+    font-size: 1.2rem;
+  }
+  .input-box input::placeholder {
+    font-size: 1.5rem;
+  }
+  footer ul {
+    gap: 1rem;
+  }
+}
+@media (max-width: 450px) {
+  section {
+    padding: 2rem 1rem;
+    min-height: auto;
+  }
+  header {
+    position: static;
+    transform: none;
+    justify-content: center;
+    align-items: center;
+    left: 10px;
+    gap: 5px;
+  }
+  .about-container {
+    flex-direction: column;
+  }
+  .project-card img {
+    width: 100%;
+  }
+  .input-box input {
+    width: 400px;
+    padding: 0.8rem 8rem;
+  }
+  .input-box input::placeholder {
+    font-size: 1rem;
+  }
+  .contact {
+    padding-bottom: 7rem;
+  }
+  .section-title {
+    margin-bottom: 1rem;
+  }
+  footer {
+    padding: 1rem;
+  }
+  footer ul {
+    flex-direction: column;
+  }
+}
