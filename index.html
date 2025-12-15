@@ -11,7 +11,7 @@
       href="favicon_io (2)/favicon-32x32light.png"
       type="image/x-icon"
     />
-    <script type="module" src="script.js"></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,9 +19,26 @@
       rel="stylesheet"
     />
     <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "cINt4FIzrbRqhR1Rf",
+        });
+      })();
+    </script>
+    <script type="module" src="script.js"></script>
     <title>Welcome to my Portfolio</title>
   </head>
   <body>
@@ -44,7 +61,7 @@
     <section class="intro" id="about">
       <div class="about-container">
         <div class="container">
-          <img src="img/portfolioProfilePic.jpg" alt="" />
+          <img src="img/portfolioImg.jpg" alt="" />
           <div class="overlay">
             <div class="overlay-text">
               But I am also a nurse working with dementia patients looking to
@@ -75,44 +92,42 @@
       <div class="projects-grid">
         <div class="project-card">
           <img src="" alt="" />
-          <h3>Project X</h3>
+          <h3>RainyDays</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
-            nesciunt fuga perferendis, soluta, at animi id excepturi ducimus a
-            voluptates ea. Debitis quis et magnam consequatur quo iusto mollitia
-            veniam!
+            In this project I built a website for a fictional company called
+            RainyDays. The website is built using HTML and CSS. It is responsive
+            and showcases jackets made for any weather we may experience.
           </p>
           <div class="btn-group">
-            <div class="btn">Live Demo</div>
-            <div class="btn">Github Repo</div>
+            <div class="btn rainyDaysLive">Live Demo</div>
+            <div class="btn rainyDaysRepo">Github Repo</div>
           </div>
         </div>
         <div class="project-card">
           <img src="img/semesterProject.png" alt="" />
-          <h3>Project Y</h3>
+          <h3>Semester Project</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
-            nesciunt fuga perferendis, soluta, at animi id excepturi ducimus a
-            voluptates ea. Debitis quis et magnam consequatur quo iusto mollitia
-            veniam!
+            This project let me play around with more HTML and CSS to create a
+            website for a fictional science museum. I am aspecially proud of the
+            nightime page of the website.
           </p>
           <div class="btn-group">
-            <div class="btn">Live Demo</div>
-            <div class="btn">Github Repo</div>
+            <div class="btn semesterProjectLive">Live Demo</div>
+            <div class="btn semesterProjectRepo">Github Repo</div>
           </div>
         </div>
         <div class="project-card">
           <img src="img/javaScriptProject.png" alt="" />
-          <h3>Project Z</h3>
+          <h3>JavaScript1</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
-            nesciunt fuga perferendis, soluta, at animi id excepturi ducimus a
-            voluptates ea. Debitis quis et magnam consequatur quo iusto mollitia
-            veniam!
+            Probably the hardets project I have done so far. Here I got to use
+            JavaScript to create a fictional video-store website using API to
+            fetch data. I learned a lot about JavaScript and how to work with
+            data.
           </p>
           <div class="btn-group">
-            <div class="btn">Live Demo</div>
-            <div class="btn">Github Repo</div>
+            <div class="btn javaScriptLive">Live Demo</div>
+            <div class="btn javaScriptRepo">Github Repo</div>
           </div>
         </div>
       </div>
@@ -167,27 +182,29 @@
       </div>
     </section>
     <section id="contact" class="contact">
-      <h2>Contact Me</h2>
+      <h2 class="section-title">Contact Me</h2>
       <form action="">
-        <label for="name">Name:</label>
+        <label for="name" class="form-title" aria-placeholder="Enter your name"
+          >Name:</label
+        >
         <input type="text" id="name" name="name" /><br />
-        <label for="email">Email:</label>
+        <label
+          for="email"
+          class="form-title"
+          aria-placeholder="Enter your email"
+          >Email:</label
+        >
         <input type="email" id="email" name="email" /><br />
-        <label for="message">Message:</label><br />
+        <label
+          for="message"
+          class="form-title"
+          aria-placeholder="Enter your message"
+          >Message:</label
+        ><br />
         <textarea id="message" name="message" rows="4" cols="50"></textarea
         ><br />
-        <submit class="btn"><input type="submit" value="Submit" />
+        <div class="btn contact-btn">Send</div>
       </form>
-      <!-- <div class="input-box">
-        <h2 class="section-title">Contact me</h2>
-        <div class="input">
-          <input type="text" placeholder="Your name" />
-          <input type="email" placeholder="example@email.com" />
-          <input type="text">
-          <i class="fa-solid fa-envelope"></i>
-        </div>
-        <div class="btn">Submit</div>
-      </div> -->
     </section>
     <footer>
       <ul>

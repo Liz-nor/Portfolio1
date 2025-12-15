@@ -9,18 +9,21 @@
   .skills-grid {
     flex-direction: column;
   }
-  .input-box input {
-    padding: 1.5rem 6rem;
-    font-size: 2rem;
-  }
+
   input input::placeholder {
     font-size: 2.5rem;
   }
-  .input-box i {
-    font-size: 2.5rem;
+}
+@media (max-width: 1100px) {
+  .overlay-text {
+    font-size: 1.5rem;
   }
 }
-
+@media (max-width: 875px) {
+  .overlay-text {
+    font-size: 1.3rem;
+  }
+}
 @media (max-width: 768px) {
   header {
     gap: 1rem;
@@ -32,18 +35,11 @@
   header .vistit-btn {
     display: none;
   }
-  .input-box input {
-    padding: 1rem 2rem;
-    font-size: 1.5rem;
-  }
-  .input-box input::placeholder {
-    font-size: 1.5rem;
-  }
-  .input-box i {
-    display: none;
-  }
   .project-card img {
     width: 100%;
+  }
+  .overlay-text {
+    font-size: 1rem;
   }
 }
 @media (max-width: 600px) {
@@ -59,9 +55,11 @@
   .nav-links {
     position: absolute;
     top: 100%;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
+    left: 0;
     width: 100%;
-    padding: 1rem;
+    font-size: 1.2rem;
+    padding: 0.5rem;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -87,15 +85,8 @@
     width: 100%;
   }
   .overlay-text {
+    width: 100%;
     font-size: 1.1rem;
-  }
-  .input-box input {
-    padding: 0.5rem 2rem;
-    width: 80%;
-    font-size: 1.2rem;
-  }
-  .input-box input::placeholder {
-    font-size: 1.5rem;
   }
   footer ul {
     gap: 1rem;
@@ -120,13 +111,7 @@
   .project-card img {
     width: 100%;
   }
-  .input-box input {
-    width: 400px;
-    padding: 0.8rem 8rem;
-  }
-  .input-box input::placeholder {
-    font-size: 1rem;
-  }
+
   .contact {
     padding-bottom: 7rem;
   }
@@ -134,6 +119,7 @@
     margin-bottom: 1rem;
   }
   footer {
+    height: auto;
     padding: 1rem;
   }
   footer ul {
