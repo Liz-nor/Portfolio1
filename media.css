@@ -126,3 +126,10 @@
     flex-direction: column;
   }
 }
+@media (max-width: 410px) {
+  .skills-box {
+    width: 100% !important;
+    max-width: 400px !important;
+    padding: 2rem 1rem;
+  }
+}
