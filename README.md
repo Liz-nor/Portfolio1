@@ -1,3 +1,41 @@
 # Portfolio1
 My first year Front-end developer portfolio
 <img width="1644" height="902" alt="Skjermbilde 2025-12-19 182954" src="https://github.com/user-attachments/assets/449d91bb-4753-4850-b005-85470f1e3dd3" />
+
+This is my portfolio from my first year as a Front-end developer student.
+
+## Features
+
+- RainyDays
+- Semester Project
+- JavaScript1
+
+## Prerequisites
+
+- Node.js (v20+)
+- npm
+
+## Getting Started
+Installing
+
+1. Clone the repo:
+git clone git@github.com:Liz-nor/portfolio1.git
+
+3. Install the dependencies:
+4. npm install
+
+## Environment Variables
+
+Create a `.env` file in the root directory:
+
+## Technologies
+
+- JavaScript
+- HTML
+- CSS
+- ESLint
+- Prettier
+
+## Author
+
+Lise Ervik | Liz-nor
