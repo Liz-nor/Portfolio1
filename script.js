@@ -1,6 +1,7 @@
 const menuIcon = document.querySelector("#menu-icon");
 const navLinks = document.querySelector(".nav-links");
-const githubIcon = document.querySelector(".github-icon");
+const githubBtn = document.querySelector("button.github-icon");
+const githubIcon = document.querySelector(".socials .github-icon");
 const linkedinIcon = document.querySelector(".linkedin-icon");
 const form = document.querySelector("form");
 const submitBtn = document.querySelector(".contact-btn");
@@ -54,6 +55,12 @@ if (submitBtn) {
 if (menuIcon) {
   menuIcon.onclick = () => {
     navLinks.classList.toggle("active");
+  };
+}
+
+if (githubBtn) {
+  githubBtn.onclick = () => {
+    window.open("https://github.com/Liz-nor");
   };
 }
 
