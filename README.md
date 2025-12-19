@@ -19,7 +19,7 @@ This is my portfolio from my first year as a Front-end developer student.
 Installing
 
 1. Clone the repo:
-git clone git@github.com:Liz-nor/portfolio1.git
+git clone https://github.com/Liz-nor/Portfolio1.git
 
 3. Install the dependencies:
 4. npm install
