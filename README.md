@@ -10,11 +10,6 @@ This is my portfolio from my first year as a Front-end developer student.
 - Semester Project
 - JavaScript1
 
-## Prerequisites
-
-- Node.js (v20+)
-- npm
-
 ## Getting Started
 Installing
 
@@ -24,9 +19,6 @@ git clone https://github.com/Liz-nor/Portfolio1.git
 3. Install the dependencies:
 4. npm install
 
-## Environment Variables
-
-Create a `.env` file in the root directory:
 
 ## Technologies
 
